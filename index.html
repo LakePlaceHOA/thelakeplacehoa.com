@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lake Place HOA</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("https://thelakeplacehoa.gogladly.com/uploads/images/f7TP0C92dYjpqB71/HOA10.png");
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background: rgba(255,255,255,.88);
+      padding: 40px;
+      border-radius: 18px;
+      text-align: center;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 20px 50px rgba(0,0,0,.3);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 30px;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: block;
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      transition: 0.2s ease;
+    }
+
+    .button-blue {
+      background: #1d4ed8;
+    }
+
+    .button-green {
+      background: #16a34a;
+    }
+
+    .button:hover {
+      opacity: .9;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>Lake Place HOA</h1>
+    <p>Please choose an option below.</p>
+
+    <!-- REPLACE THIS LINK WITH YOUR COMMUNITY WEBSITE -->
+    <a class="button button-blue" href="https://thelakeplacehoa.gogladly.com" target="_blank">
+      Visit Community Website
+    </a>
+
+    <!-- PAYMENT BUTTON (we will activate later) -->
+    <a class="button button-green" href="#">
+      Make a Payment
+    </a>
+
+    <footer>
+      © <span id="year"></span> Lake Place HOA
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").innerText = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
